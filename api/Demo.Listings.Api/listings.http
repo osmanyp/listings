@@ -1,0 +1,26 @@
+
+###Get All Listings
+GET https://localhost:7104/listings
+
+###Get Listing by Id
+GET https://localhost:7104/listings/2
+
+###
+POST https://localhost:7104/listings HTTP/1.1
+content-type: application/json
+
+{
+  "price": 1.0,
+  "bathrooms": 2,
+  "halfBathrooms": 2,
+  "bedrooms": 1,
+  "yearBuilt": 1907,
+  "address": "42798 Nichole Branch Apt. 244, Port Philip, IN 72942",
+  "photoUrl": "https://example.com/photo2",
+  "latitude": 88.519002,
+  "longitude": 44.788677
+}
+
+
+###
+DELETE https://localhost:7104/listings/31
